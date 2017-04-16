@@ -1,0 +1,13 @@
+name: ceruversion
+version: 0.1.0
+
+authors:
+  - Jonathan Silverman <jsilverman2@gmail.com>
+
+targets:
+  ceruversion:
+    main: src/ceruversion.cr
+
+crystal: 0.21.1
+
+license: WTFPL
