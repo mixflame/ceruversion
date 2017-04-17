@@ -5,7 +5,9 @@ require "./ceruversion/*"
 module Ceruversion #MixFlame was here and we love you. https://mixflame.com
   puts "ceruversion version calculator"
   if ARGV.size == 0
-    puts "your version: #{APP_NAME} v#{VERSION}"
+    app_name = %x{basename `git rev-parse --show-toplevel`}.strip
+    version = `git rev-list master --count`.to_f / 100.to_f
+    puts "your version: #{app_name} v#{version}"
   else
     github_repo = ARGV.first
     response = HTTP::Client.get "https://api.github.com/repos/#{github_repo}/contributors"
