@@ -2,7 +2,7 @@ name: ceruversion
 version: 0.1.0
 
 authors:
-  - Jonathan Silverman <jsilverman2@gmail.com>
+  - cerulean <mixflame@mixfla.me>
 
 targets:
   ceruversion:
